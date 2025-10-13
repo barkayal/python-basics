@@ -10,5 +10,4 @@ def get_prime_factors(num):
     return factors
 
 tests = [13, 630]
-
 [print(f"{test}: {get_prime_factors(test)}") for test in tests]
