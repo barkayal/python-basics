@@ -25,3 +25,14 @@ False
 >>> is_palindrome('Go hang a salami, I’m a lasagna hog.')
 True
 ```
+
+## Python Code Challenge #03: Sort a String
+
+Your goal is to implement a function, `sort_words()`, that takes a string containing one or more words separated by spaces as the input argument and returns a string containing those words sorted alphabetically.
+
+### Example Test Output
+
+```console
+>>> sort_words('banana ORANGE apple')
+'apple banana ORANGE'
+```
