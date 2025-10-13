@@ -53,7 +53,7 @@ NOTE: Since the input argument could be a list of lists, your function should be
 [[0, 0], [1]]
 ```
 
-## Python Code Challenge #5: Play the Waiting Game
+## Python Code Challenge #05: Play the Waiting Game
 
 Your goal is to implement a function, `waiting_game()`, that prints a message for the player to wait a random amount of time, somewhere between two to four seconds. When the player presses Enter, that starts a timer. The player's goal is to wait the specified number of seconds and then press Enter again. That displays the elapsed time, along with a message about whether the player was too fast, too slow, or right on target.
 
@@ -71,7 +71,7 @@ Elapsed time: 1.680 seconds
 (0.320 seconds too fast)
 ```
 
-## Python Code Challenge #6: Save a Dictionary
+## Python Code Challenge #06: Save a Dictionary
 
 Your goal is to implement two functions, `save_dict()` and `load_dict()`. The `save_dict()` function takes two inputs arguments for the dictionary to save and an output file path. The `load_dict()` function takes an input argument of the file path to the saved dictionary and returns its stored dictionary object.
 
@@ -81,4 +81,23 @@ Your goal is to implement two functions, `save_dict()` and `load_dict()`. The `s
 >>> save_dict({1: 'a', 2: 'b', 3: 'c'}, 'test.pickle')
 print(load_dict('test.pickle'))
 {1: 'a', 2: 'b', 3: 'c'}
+```
+
+## Python Code Challenge #07: Schedule a Function
+
+Your goal is to implement a function, `schedule_function()`, that takes three inputs arguments for the time at which to run a specified function, the function you want to execute, and a variable number (zero or more) of arguments which are passed to the schedule function to use.
+
+When your `schedule_function()` is called, it should immediately print a message indicating which function was scheduled and when it will execute.
+
+### Example Test Output
+
+```console
+>>> schedule_function(time.time() + 1, print, 'Howdy!')
+print() scheduled for Sun Aug 14 20:39:28 2022
+```
+
+Then one second later...
+
+```console
+Howdy!
 ```
